@@ -18,7 +18,6 @@ def largestMultipleOfThree(digits: List[int]) -> str:
     #     memory[d] += 1
 
     memory = collections.Counter(digits)
-    print(memory)
 
     sum_digits = sum(digits)
 
