@@ -6,8 +6,7 @@ def largestMultipleOfThree(digits: List[int]) -> str:
     def create_result(li):
         if not li:
             return ""
-        parsed_li = [str(i)*li[i] for i in sorted(li, reverse=True)]
-        f_string = "".join(parsed_li)
+        f_string = "".join([str(i)*li[i] for i in sorted(li, reverse=True)])
         return f_string[:-1].lstrip('0') + f_string[-1] if f_string else ""
 
     if not digits:
